@@ -1,0 +1,390 @@
+/*import font*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/*reset browser*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather";
+}
+
+/*section 1: intro*/
+.intro-overlay{
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.intro-overlay img.first{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-title{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#ffd000;
+    font-size: 80px;
+    text-align: center;
+    z-index: 2;
+}
+
+.entry-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#ffd000;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    z-index: 2;
+}
+
+
+.arrow1 img{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arrow1 img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+}
+/*section 1 ends*/
+
+/*section 2 question*/
+.question{
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+.question-background {
+    display: block; 
+    width: 100%; 
+    height: auto; 
+    margin: 0; 
+    padding: 0; 
+    z-index: 2;
+}
+.trip{
+    position: absolute;
+    top: 50%;
+    left:5%;
+    font-size: 40px;
+    color:#ffd000;
+    z-index: 2;
+}
+.travel-paragraph{
+    width: 300px;
+    position: absolute;
+    top: 30%;
+    right:20%;
+    font-size: 30px;
+    z-index: 2;
+}
+
+.btn1{
+    background-color:#ffd000;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+/*section 2 ends*/
+
+/*section 3 parks, beaches and food*/
+.parks-beaches{
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.jungle{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.parks{
+    top: 20%;
+    right:20%;
+    position: absolute;
+    font-size: 60px;
+    color:#ffd000;
+    z-index: 3;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index:3;
+    padding-top: 20%;
+  }
+
+
+  .img-box1, .img-box2, .img-box3 {
+    position: relative;
+    height: 10%;
+    width: 10%; 
+    z-index: 3;
+  }
+  
+  .img-box img {
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    width: auto;
+    height: auto; 
+  }
+  .arrow2 {
+    top: 75%;
+    left:80%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    transition: box-shadow 0.3s ease,transform 0.3s ease ;
+  }
+  .arrow2:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+  }
+    /*section 3 ends*/
+
+    /*section 4 stats*/
+  .stats{
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+  
+  }
+
+  .bubble-background{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;  
+    }
+  
+
+  .bubbles-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px; 
+    z-index:3;
+    padding-top: 20%;
+  }
+  
+  .bubble1 h2, .bubble2 h2, .bubble3 h2, .bubble4 h2 {
+    position: absolute; 
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+
+
+.bubble1 p, .bubble2 p, .bubble3 p, .bubble4 p {
+    position: absolute; 
+    top: 75%;  
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+ .bubble1, .bubble2, .bubble3, .bubble4 {
+    position: relative;
+    object-fit: cover ;
+    height: 10%;
+    width: 10%; 
+    border-radius: 50%;
+    z-index: 4;
+  }
+  
+  .bubble img {
+    width: auto;
+    height: auto; 
+
+  }
+/*section 4 ends*/
+
+/*section 5 author*/
+.author{
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.author-background{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;  
+}
+
+.author-img{
+    top: 25%;
+    left: 10%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.author-info{
+    top: 50%;
+    right:3%;
+    position: absolute;
+    font-size: 40px;
+    color:#ffd000;
+    z-index: 3;
+}
+
+
+.arrow3 img{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+    transform: translateY(95%);
+    width: 100px;
+    height: 100px;
+    z-index: 5; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arrow3 img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+}
+/*section 5 ends*/
+
+/*outro contact form*/
+.contact{
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.contact-background{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover; 
+    background-position: center;
+    position: absolute;
+    top: -93%;
+    left: -20%;
+    z-index: -1;  
+}
+
+.contact h1{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color:#ffd000;
+    margin-top: 30px;
+    font-size: 60px;
+    text-align: center;
+    z-index: 3;
+}
+
+.contact p{
+    width: 800px;
+    position: absolute;
+    top: 35%;
+    left:5%;
+    font-size: 40px;
+    z-index: 3;
+}
+
+.icons{
+    position: absolute;
+    bottom:35%;
+    left: 12%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.icon-img1, .icon-img2, .icon-img3, .icon-img4, .icon-img5{
+    position: absolute;
+    width: 100px; 
+    height: auto;
+    position: relative;
+    
+}
+.icon-img img{
+    position: relative;
+    object-fit: cover ;
+    z-index: 3;
+    display: inline-flex;
+    height: auto;
+    width: 100%; 
+}
+
+  .form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    top: 30%;
+    left:20%;
+    flex: 1;
+    color: #ffd000;
+    z-index:2;
+
+  }
+  
+  input[type=text], select, textarea {
+    width: 40%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical;
+  }
